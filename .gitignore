@@ -4,3 +4,6 @@
 /CalculatorTests/obj/
 /code/.pytest_cache/
 /code/allure-results/
+/notebook_test/allure-results/
+/notebook_test/.pytest_cache/
+/notebook_test/__pycache__/

@@ -1,4 +1,3 @@
-# app_code.py
 import sqlite3
 from typing import List, Tuple, Optional
 
@@ -9,7 +8,6 @@ def create_in_memory_db() -> sqlite3.Connection:
     """
     conn = sqlite3.connect(":memory:")
     cursor = conn.cursor()
-
     cursor.execute(
         """
         CREATE TABLE employees (
@@ -49,7 +47,7 @@ def get_employee_by_id(conn: sqlite3.Connection, emp_id: int) -> Optional[Tuple[
 
 def get_all_employees_in_department(conn: sqlite3.Connection, dept: str) -> List[Tuple[int, str, str]]:
     """
-    Returns all employees in a given department as a list of (id, name, department).
+    Returns all employees in the given department as a list of (id, name, department).
     """
     cursor = conn.cursor()
     cursor.execute(

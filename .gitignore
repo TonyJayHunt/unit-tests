@@ -1,0 +1,6 @@
+/.venv/
+/allure-report/
+/CalculatorTests/bin/
+/CalculatorTests/obj/
+/code/.pytest_cache/
+/code/allure-results/
